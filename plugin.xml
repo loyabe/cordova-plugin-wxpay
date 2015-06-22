@@ -92,12 +92,12 @@
 
     <!-- android -->
     <platform name="android">
-      <!--    <hook
+         <hook
             type="after_plugin_install"
             src="scripts/android/changePackage.js" />
          <hook
             type="before_plugin_rm"
-            src="scripts/android/changePackage.js" />  -->  
+            src="scripts/android/changePackage.js" />  
 
         <config-file target="res/xml/config.xml" parent="/*">
               <preference name="weixinappid" value="wx832f85feb2e76b14" />
@@ -111,7 +111,7 @@
 		    </feature>
         </config-file>
         
-        <config-file target="AndroidManifest.xml" parent="/manifest/application/activity[@android:name='X5']">
+        <config-file target="AndroidManifest.xml" parent="/manifest/application/activity[@android:name='MainActivity']">
             <intent-filter>
                 <action android:name="android.intent.action.VIEW"/>
                 <category android:name="android.intent.category.DEFAULT"/>
